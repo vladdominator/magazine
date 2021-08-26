@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import POSTS from '../views/POSTS.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -7,8 +8,18 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/women',
-    name: 'POSTS',
-    component: () => import('../views/POSTS.vue'),
+    name: 'Womens',
+    component: POSTS,
+  },
+  {
+    path: '/men',
+    name: 'Men',
+    component: POSTS,
+  },
+  {
+    path: '/kids',
+    name: 'Kids',
+    component: POSTS,
   },
 ];
 

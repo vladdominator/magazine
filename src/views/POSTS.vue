@@ -1,6 +1,8 @@
 <template>
   <div class="posts">
-    {{ allPosts }}
+    <ul :key="data.id" v-for="data in allPosts">
+      <li>{{ data.id }}</li>
+    </ul>
   </div>
 </template>
 

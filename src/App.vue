@@ -17,6 +17,9 @@ export default {
   max-width: 1440px;
   margin: 0 auto;
 }
+.container {
+  padding: 0 101px;
+}
 </style>
 <style lang="scss">
 @font-face {
@@ -50,6 +53,11 @@ export default {
 ul[class],
 ol[class] {
   padding: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 body,
